@@ -1,0 +1,23 @@
+<footer id="layout-footer">
+    <div>
+        <p>
+            &#169; Rahul Kumar. All Rights Reserved
+        </p>
+    </div>
+
+    <div>
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <% if(locals.user !=undefined){ %>
+                    <a href="/users/profile/<%= user._id%>">Profile</a>
+                    <%}%>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+</footer>
